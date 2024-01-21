@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #showcase {
+      background-image: url(resim.jpeg);
+      height: 500px;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      background-position: center;
+    }
+
+    #howitworks {
+      
+      padding: 10px;
+    }
+
+    .main-header {
+      background-color: #fc997c;
+      border: 0;
+      padding: 8px 16px;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .main-nav {
+      display: inline-block;
+      width: calc(100% - 99px);
+      text-align: right;
+    }
+
+    .main-nav_items {
+
+      padding: 0px;
+      margin: 0px;
+      content: '\2022'; 
+
+
+    }
+
+    .main-nav_item {
+
+      display: inline-block;
+      margin: 0px 10px;
+      list-style: none;
+
+    }
+
+    .main-header__logo {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 21px;
+    }
+    .main-nav_item a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .main-nav_item a:hover, .main-nav_item:hover::before{
+        color: #2e4c6b;
+    }
+
+    .main-nav_item::before,.main-nav_item:active::before, .main-nav_item a:active{
+        content: '\2022';
+        color: #fff;
+    }
+    .main-nav_item--login a{
+        color: #fff;
+        background-color: #2e4c6b;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid #fff
+    }
+    .main-nav_item--login a:hover{
+        color: #2e4c6b;
+        background-color: #fff;
+        border: 2px solid #2e4c6b;
+    }
+    .main-nav_item--login::before{
+        content: none;
+        color: #fff;
+    }
+    
+    
+    
+    
+
+  </style>
+</head>
+
+<body>
+  <header class="main-header">
+    <a href="" class="main-header__logo">MovieApp</a>
+
+    <nav class="main-nav">
+      <ul class="main-nav_items">
+        <li class="main-nav_item"><a href="">FİLMLER</a></li>
+        <li class="main-nav_item"><a href="">DİZİLER</a></li>
+        <li class="main-nav_item main-nav_item--login"><a href="">LOGİN</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="showcase">
+      <h1>Welcome To MovieApp</h1>
+    </section>
+    <section id="howitworks">
+      <h2>How İt Works?</h2>
+    </section>
+  </main>
+</body>
+
+</html>
